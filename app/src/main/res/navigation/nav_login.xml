@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_login"
+    app:startDestination="@id/loginUsernamePasswordFragment">
+
+    <fragment
+        android:id="@+id/loginUsernamePasswordFragment"
+        tools:layout="@layout/fragment_login_username_password"
+        android:name="com.electricarandroidapp.view.fragments.LoginUsernamePasswordFragment"
+        android:label="LoginUsernamePasswordFragment" />
+
+    <fragment
+        android:id="@+id/registerFragment"
+        tools:layout="@layout/fragment_register"
+        android:name="com.electricarandroidapp.view.fragments.RegisterFragment"
+        android:label="RegisterFragment" />
+
+</navigation>
