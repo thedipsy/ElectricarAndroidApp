@@ -9,4 +9,14 @@
     <string name="forgot_password">Forgot Password?</string>
     <string name="electricar">Electricar</string>
     <string name="logo">logo</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="register">Register</string>
+    <string name="register_here">Don\'t have an account? Register here.</string>
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
+    <string name="phone">Phone</string>
+    <string name="register_form">Register Form</string>
+    <string name="login_here">Already have an account? Login here.</string>
+    <string name="submit">Submit</string>
+    <string name="welcome">Welcome!</string>
 </resources>

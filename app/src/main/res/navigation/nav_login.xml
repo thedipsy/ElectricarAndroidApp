@@ -4,17 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_login"
     app:startDestination="@id/loginUsernamePasswordFragment">
-
     <fragment
         android:id="@+id/loginUsernamePasswordFragment"
-        tools:layout="@layout/fragment_login_username_password"
-        android:name="com.electricarandroidapp.view.fragments.LoginUsernamePasswordFragment"
-        android:label="LoginUsernamePasswordFragment" />
-
+        android:name="com.electricarandroidapp.ui.fragments.login.LoginUsernamePasswordFragment"
+        android:label="LoginUsernamePasswordFragment" >
+        <action
+            android:id="@+id/action_loginUsernamePasswordFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
     <fragment
         android:id="@+id/registerFragment"
-        tools:layout="@layout/fragment_register"
-        android:name="com.electricarandroidapp.view.fragments.RegisterFragment"
-        android:label="RegisterFragment" />
-
+        android:name="com.electricarandroidapp.ui.fragments.login.RegisterFragment"
+        android:label="RegisterFragment" >
+        <action
+            android:id="@+id/action_registerFragment_to_loginUsernamePasswordFragment"
+            app:destination="@id/loginUsernamePasswordFragment"
+            app:popUpTo="@+id/registerFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
 </navigation>

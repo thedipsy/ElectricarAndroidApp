@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="Theme.ElectricarAndroidApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/colorPrimaryLight</item>
-        <item name="colorPrimaryVariant">@color/colorPrimary</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/colorSecondaryLight</item>
@@ -13,8 +13,19 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
 
         <!--background image-->
-        <item name="android:windowBackground">@drawable/background_gradient</item>
-
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:button">@style/DarkButton</item>
 
     </style>
+
+    <style name="AppTheme" parent="android:Theme">
+        <item name="materialButtonStyle">@style/DarkButton</item>
+    </style>
+
+    <!--Button Style-->
+    <style name="DarkButton" parent="android:style/Widget.Button">
+        <!-- Set background -->
+        <item name="android:background">@drawable/button_background</item>
+    </style>
+
 </resources>
